@@ -9,7 +9,7 @@ class User(BaseModel):
     estado: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class UserUpdate(BaseModel):
     nombre: str
